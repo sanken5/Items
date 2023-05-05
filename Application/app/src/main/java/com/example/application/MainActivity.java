@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 String str = "";                //保存选中的值
-                // 爱好
+                // 特长
                 if (like1.isChecked())            //当第一个复选按钮被选中
                     str += like1.getText().toString() + "  ";
                 if (like2.isChecked())            //当第一个复选按钮被选中
@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
                 if (like3.isChecked())            //当第一个复选按钮被选中
                     str += like3.getText().toString() + "  ";
 
-                bundle.putCharSequence("like", str);
+                bundle.putCharSequence("hobby", str);
 
                 intent.putExtras(bundle);//将Bundle对象添加到Intent对象中
                 startActivity(intent);

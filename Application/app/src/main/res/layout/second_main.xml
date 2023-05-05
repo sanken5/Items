@@ -1,47 +1,132 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8" ?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    tools:context=".MainActivity"
+    android:stretchColumns="0,3">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="你注册的详细信息"
-        android:textSize="20sp"/>
-
-    <TextView
-        android:id="@+id/name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="用户名："
-        android:textSize="20sp"/>
-
-    <TextView
-        android:id="@+id/pwd1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="密    码:"
         android:textSize="20sp" />
+    <TableRow
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <!-- 第1列 -->
+        <TextView
+            android:layout_width="62dp"
+            android:layout_height="wrap_content" />
+        <!-- 第2列 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户名 "
+            android:layout_gravity="right"
+            android:textSize="20sp"/>
+        <!-- 第3列 -->
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:minWidth="200dp"
+            android:textSize="18sp" />
+        <TextView />
+    </TableRow>
 
+    <TableRow
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密 码 "
+            android:layout_gravity="right"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/pwd1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:minWidth="200dp"
+            android:textSize="18sp" />
+        <TextView />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/t3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确认密码 "
+        android:layout_gravity="right"
+        android:textSize="20sp" />
     <TextView
         android:id="@+id/pwd2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="确认密码"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/sex"
+        android:textColor="@color/red"
+        android:minWidth="200dp"
+        android:textSize="18sp" />
+    <TextView />
+    </TableRow>
+    <TableRow
+        android:id="@+id/t4"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="性    别："
-        android:textSize="20sp"/>
+        android:layout_height="wrap_content">
+        <TextView />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="性 别 "
+            android:layout_gravity="right"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:minWidth="200dp"
+            android:textSize="18sp" />
+        <TextView />
+    </TableRow>
 
-    <TextView
-        android:id="@+id/like"
+    <TableRow
+        android:id="@+id/t5"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="特     长:"
-        android:textSize="20sp"/>
-</LinearLayout>
+        android:layout_height="wrap_content">
+        <TextView />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="特 长 "
+            android:layout_gravity="right"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/hobby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:minWidth="200dp"
+            android:textSize="18sp" />
+        <TextView />
+    </TableRow>
+</TableLayout>
+
+
+
+
+
+
+
+
+
+

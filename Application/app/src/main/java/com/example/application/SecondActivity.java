@@ -16,16 +16,15 @@ public class SecondActivity extends AppCompatActivity {
         final TextView pwd1 = (TextView) findViewById(R.id.pwd1);
         final TextView pwd2 = (TextView) findViewById(R.id.pwd2);
         final TextView sex = (TextView) findViewById(R.id.sex);
-        final TextView like = (TextView) findViewById(R.id.like);
+        final TextView hobby = (TextView) findViewById(R.id.hobby);
 
         Intent intent=getIntent(); //获取Intent对象
         Bundle bundle= ((Intent) intent).getExtras();  //获取传递的数据包
-        user.setText("用户名："+bundle.getString("name"));
-        pwd1.setText("密   码："+bundle.getString("pwd1"));
-        pwd2.setText("确认密码："+bundle.getString("pwd2"));
-        sex.setText("性    别："+bundle.getString("sex"));
-        like.setText("爱    好："+bundle.getString("like"));
-
+        user.setText(bundle.getString("name"));
+        pwd1.setText(bundle.getString("pwd1"));
+        pwd2.setText(bundle.getString("pwd2"));
+        sex.setText(bundle.getString("sex"));
+        hobby.setText(bundle.getString("hobby"));
 
     }
 }
