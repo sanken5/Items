@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="16dp"
     tools:context=".MainActivity"
     android:stretchColumns="0,3">
 
@@ -111,7 +112,7 @@
         android:id="@+id/like"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="特     长:"
+        android:text="特  长:"
         android:textSize="20sp"/>
 
         <CheckBox
