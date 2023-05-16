@@ -1,47 +1,41 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".MainActivity"
-    android:stretchColumns="0,3">
+    tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/title1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:text="你注册的详细信息"
-        android:textSize="20sp" />
-    <TableRow
-        android:id="@+id/t1"
+        android:textSize="30sp" />
+    <TableLayout
+        android:id="@+id/tb01"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <!-- 第1列 -->
-        <TextView/>
-        <!-- 第2列 -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="用户名 "
-            android:layout_gravity="right"
-            android:textSize="20sp"/>
-        <!-- 第3列 -->
-        <TextView
-            android:id="@+id/name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/red"
-            android:minWidth="200dp"
-            android:textSize="18sp" />
-        <TextView />
-    </TableRow>
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/title1">
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用 户 名"
+                android:layout_gravity="right"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="200dp"
+                android:layout_margin="10dp"
+                android:textColor="@color/red"
+                android:minWidth="200dp"
+                android:textSize="18sp"/>
+        </TableRow>
 
-    <TableRow
-        android:id="@+id/t2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <TextView />
+    <TableRow>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -50,19 +44,14 @@
             android:textSize="20sp" />
         <TextView
             android:id="@+id/pwd1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="200dp"
+            android:layout_margin="10dp"
             android:textColor="@color/red"
             android:minWidth="200dp"
             android:textSize="18sp" />
-        <TextView />
     </TableRow>
 
-    <TableRow
-        android:id="@+id/t3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-    <TextView />
+    <TableRow>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -71,18 +60,13 @@
         android:textSize="20sp" />
     <TextView
         android:id="@+id/pwd2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_margin="10dp"
         android:textColor="@color/red"
         android:minWidth="200dp"
         android:textSize="18sp" />
-    <TextView />
     </TableRow>
-    <TableRow
-        android:id="@+id/t4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <TextView />
+    <TableRow>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -91,19 +75,14 @@
             android:textSize="20sp"/>
         <TextView
             android:id="@+id/sex"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="200dp"
+            android:layout_margin="10dp"
             android:textColor="@color/red"
             android:minWidth="200dp"
             android:textSize="18sp" />
-        <TextView />
     </TableRow>
 
-    <TableRow
-        android:id="@+id/t5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <TextView />
+    <TableRow>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -112,21 +91,18 @@
             android:textSize="20sp"/>
         <TextView
             android:id="@+id/hobby"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="200dp"
+            android:layout_margin="10dp"
             android:textColor="@color/red"
             android:minWidth="200dp"
             android:textSize="18sp" />
-        <TextView />
     </TableRow>
-</TableLayout>
-
-
-
-
-
-
-
-
-
-
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical"/>
+    </TableLayout>
+</RelativeLayout>
